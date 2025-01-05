@@ -2,7 +2,7 @@ package com.itv.app;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.itv.model.Gear;
+import com.itv.model.Car;
 
 public class DriverApp {
 
@@ -11,8 +11,11 @@ public class DriverApp {
 //		Engine myEngine=(Engine)beanFactory.getBean("e2");
 //		System.out.println(myEngine);
 		
-		Gear myGear=(Gear)beanFactory.getBean("g1");
-		System.out.println(myGear);
+//		Gear myGear=(Gear)beanFactory.getBean("g1");
+//		System.out.println(myGear);
+		
+		Car myCar=(Car)beanFactory.getBean("c1");
+		System.out.println(myCar);
 
 	}
 

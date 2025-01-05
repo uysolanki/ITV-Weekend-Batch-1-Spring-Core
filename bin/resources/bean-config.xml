@@ -35,5 +35,27 @@
      		<value>5</value>
      		</property>
      </bean>
+     
+	
+       <bean id="c1" class="com.itv.model.Car">
+       <property name="carMfgName">
+       <value>Mahindra</value>
+       </property>
+       
+       <property name="carModelName">
+       <value>Thar</value>
+       </property>
+       
+       <property name="color">
+       <value>Black</value>
+       </property>
+       
+       <property name="price">
+       <value>1000</value>
+       </property>
+       
+       <property name="engine" ref="e1"></property>
+       <property name="gear" ref="g1"></property>
+       </bean>
     
 </beans>
