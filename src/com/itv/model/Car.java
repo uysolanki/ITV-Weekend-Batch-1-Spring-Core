@@ -5,6 +5,8 @@ import javax.annotation.PreDestroy;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Car// implements InitializingBean,DisposableBean
 {
@@ -14,7 +16,11 @@ public class Car// implements InitializingBean,DisposableBean
 		private double price;
 		private String color;
 		
+		@Autowired
+		@Qualifier("eng2")
 		private Engine engine;
+		
+		@Autowired
 		private Gear gear;
 		
 		public Car() {
