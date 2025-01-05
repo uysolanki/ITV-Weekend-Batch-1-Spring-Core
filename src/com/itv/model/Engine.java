@@ -1,5 +1,8 @@
 package com.itv.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Engine {
 			private String engineMfgName;
 			private int engineLitreCapacity;

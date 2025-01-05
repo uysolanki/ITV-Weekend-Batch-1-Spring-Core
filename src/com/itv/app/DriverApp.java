@@ -1,5 +1,6 @@
 package com.itv.app;
 
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.itv.model.Car;
@@ -14,9 +15,11 @@ public class DriverApp {
 //		Gear myGear=(Gear)beanFactory.getBean("g1");
 //		System.out.println(myGear);
 		
-		Car myCar=(Car)beanFactory.getBean("c1");
+		Car myCar=beanFactory.getBean("c1",Car.class);
 		System.out.println(myCar);
-
+		
+		AbstractApplicationContext abs=( AbstractApplicationContext) beanFactory;
+		abs.registerShutdownHook();
 	}
 
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -6,6 +6,8 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config />
     		
     <bean id="e1" class="com.itv.model.Engine">
     	<constructor-arg value="Toyota"></constructor-arg>
@@ -37,7 +39,7 @@
      </bean>
      
 	
-       <bean id="c1" class="com.itv.model.Car">
+       <bean id="c1" class="com.itv.model.Car">  init-method="apple" destroy-method="mango"
        <property name="carMfgName">
        <value>Mahindra</value>
        </property>
@@ -58,4 +60,4 @@
        <property name="gear" ref="g1"></property>
        </bean>
     
-</beans>
+</beans> -->
